@@ -9,13 +9,14 @@
     android:orientation="vertical">
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/top_menu"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:background="#c0c0c0"
             android:text="메인 상단부분" />
         <!--  왼쪽엔 메뉴 아이콘, 오른쪽엔 돋보기 아이콘 들어갈 것임.  -->
@@ -27,8 +28,9 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/ScrollView1"
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <!-- 아래 의미 없이 LinearLayout이 있는 이유는, 스크롤뷰를 사용할때, 기본 설정이 vertical로 되어있어야 하기 때문에
              임의로 하나 넣어주었다. 없으면 오류남! -->
@@ -42,7 +44,7 @@
             <Button
                 android:id="@+id/main_zon"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="150dp"
                 android:background="#f2ff9c" />
 
 
@@ -57,11 +59,11 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="150dp"/>
+                    android:layout_height="160dp"/>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="150dp" />
+                    android:layout_height="160dp" />
 
             </LinearLayout>
 
@@ -73,11 +75,11 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="150dp" />
+                    android:layout_height="160dp" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="150dp" />
+                    android:layout_height="160dp" />
 
             </LinearLayout>
 
@@ -88,12 +90,12 @@
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="160dp"
                     android:layout_weight="1" />
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="160dp"
                     android:layout_weight="1" />
             </LinearLayout>
 
@@ -101,12 +103,49 @@
     </ScrollView>
 
 
+    <LinearLayout
+        android:id="@+id/footer_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
-    <TextView
-        android:id="@+id/Bottom_menu"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="#c0c0c0"
-        android:text="하단영역" />
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/footer_menu1"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#c0c0c0"
+            android:text="하단영역1"
+            />
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/footer_menu2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#c0c0c0"
+            android:text="하단영역2" />
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/footer_menu3"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#c0c0c0"
+            android:text="하단영역3" />
+        <Button
+            android:id="@+id/footer_menu4"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#c0c0c0"
+            android:text="하단영역4" />
+
+
+    </LinearLayout>
 
 </LinearLayout>
