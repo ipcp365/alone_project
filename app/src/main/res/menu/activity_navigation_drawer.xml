@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="25dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_category"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="category"/>
+    />
+    <item
+        android:id="@+id/nav_notice"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="notice" />
+    <item
+        android:id="@+id/nav_contact"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="1:1 contact" />
+</group>
+
+</menu>
