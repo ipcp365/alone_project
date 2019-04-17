@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".alone_life"
+    tools:context=".Frag2"
     android:orientation="vertical">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -431,11 +432,8 @@
 
             <!-- 한개 끝!-->
 
-
-
         </LinearLayout>
     </ScrollView>
-
 
     <LinearLayout
         android:id="@+id/footer_menu"
@@ -445,42 +443,6 @@
         android:layout_gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="10dp">
-
-        <Button
-            android:layout_marginRight="10dp"
-            android:id="@+id/footer_menu1"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="#c0c0c0"
-            android:text="하단영역1"
-            />
-        <Button
-            android:layout_marginRight="10dp"
-            android:id="@+id/footer_menu2"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="#c0c0c0"
-            android:text="하단영역2" />
-        <Button
-            android:layout_marginRight="10dp"
-            android:id="@+id/footer_menu3"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="#c0c0c0"
-            android:text="하단영역3" />
-        <Button
-            android:id="@+id/footer_menu4"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="#c0c0c0"
-            android:text="하단영역4" />
-
-
     </LinearLayout>
 
 </LinearLayout>
-
