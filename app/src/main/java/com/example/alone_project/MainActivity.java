@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Frag2 blankfragment2;
     Frag3 blankfragment3;
     Frag4 blankfragment4;
+   //수정수정
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
