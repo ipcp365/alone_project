@@ -13,6 +13,7 @@ import android.view.ViewGroup;
  */
 public class CategoryFragment extends Fragment {
 
+//주석
 
     public CategoryFragment() {
         // Required empty public constructor
