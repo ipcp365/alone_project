@@ -12,7 +12,7 @@ import android.view.ViewGroup;
  * A simple {@link Fragment} subclass.
  */
 public class NoticeFragment extends Fragment {
-
+        //수정해봄
 
     public NoticeFragment() {
         // Required empty public constructor
