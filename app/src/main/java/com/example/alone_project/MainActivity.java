@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
             bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -70,6 +71,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     return true;
                 }
             });
+            bottomNavigationView.setSelectedItemId(R.id.action_item1); // 무조건 한번 눌러주게 하는 명령어!!
+
         }
 
         @Override
