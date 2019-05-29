@@ -49,19 +49,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                     switch (item.getItemId()) {
-                        case R.id.app_bar_search: {
+                        case R.id.action_item1: {
                             transaction.replace(R.id.container, new Fragment1()).commitAllowingStateLoss();
                             break;
                         }
-                        case R.id.action_item1: {
+                        case R.id.action_item2: {
                             transaction.replace(R.id.container, new Fragment2()).commitAllowingStateLoss();
                             break;
                         }
-                        case R.id.action_item2: {
+                        case R.id.action_item3: {
                             transaction.replace(R.id.container, new Fragment3()).commitAllowingStateLoss();
                             break;
                         }
-                        case R.id.action_item3: {
+                        case R.id.action_item4: {
                             transaction.replace(R.id.container, new Fragment4()).commitAllowingStateLoss();
                             break;
                         }
