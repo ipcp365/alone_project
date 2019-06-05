@@ -1,5 +1,6 @@
 package com.example.alone_project;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
@@ -102,6 +103,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             //noinspection SimplifiableIfStatement
             if (id == R.id.action_settings) {
                 return true;
+            } else if (id == R.id.app_bar_search) {
+                startActivity(new Intent(this, SearchActivity.class));
             }
 
             return super.onOptionsItemSelected(item);
