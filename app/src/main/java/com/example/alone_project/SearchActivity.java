@@ -1,15 +1,22 @@
 package com.example.alone_project;
 
+import android.content.ClipData;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.BitSet;
+import java.util.List;
 
 public class SearchActivity extends AppCompatActivity {
-
     SearchView mySearchView;
     ListView myList;
 
@@ -25,12 +32,11 @@ public class SearchActivity extends AppCompatActivity {
 
         list = new ArrayList<String>();
 
-        list.add("Monday");
-        list.add("Tuesday");
-        list.add("Wednesday");
-        list.add("Thursday");
-        list.add("Saturday");
-        list.add("Sunday");
+        list.add("data");
+        list.add("home");
+        list.add("community");
+        list.add("mypage");
+
 
         adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,list);
         myList.setAdapter(adapter);
