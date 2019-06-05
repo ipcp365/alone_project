@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    tools:context=".PopupActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="제목"
+        android:id="@+id/title_edit"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="내용"
+        android:id="@+id/content_edit"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="글 작성"
+        android:id="@+id/bt_click"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="닫기"
+        android:id="@+id/end"/>
+</LinearLayout>
