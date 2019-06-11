@@ -15,40 +15,143 @@
 
 
 
+
 <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
 
-
-
-    <Button
-        android:id="@+id/bt1"
+    <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="match_parent"
-        android:layout_height="103dp"
-        android:text="나의활동"
-        android:textSize="30dp"
-        app:srcCompat="@android:color/darker_gray" />
+        android:layout_height="264dp"
+        android:src="@drawable/profile"
+        android:background="#f0f0f0"/>
 
-    <Button
-        android:id="@+id/btt"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="103dp"
-        android:text="푸쉬알림"
-        android:textSize="30dp"/>
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
         <!--app:srcCompat="@android:color/darker_gray" />-->
 
-    <Button
-        android:id="@+id/bt3"
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="135dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_monetization_on_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="포인트"
+            android:textSize="30dp"/>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="135dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_thumb_up_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="구독함"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="135dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_check_box_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="누적출석"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="103dp"
-        android:text="로그아웃"
-        android:textSize="30dp"
-        app:srcCompat="@android:color/darker_gray" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="135dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_person_add_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="친구들"
+            android:textSize="30dp"/>
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="135dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_share_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="공유함"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="135dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_create_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="글작성수"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btt"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:text="알림설정"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:text="로그아웃"
+            android:textSize="30dp"
+            app:srcCompat="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:text="회원탈퇴"
+            android:textSize="30dp"
+            app:srcCompat="@android:color/darker_gray" />
+
+
+        <!--app:srcCompat="@android:color/darker_gray" />-->
+
+
+
+    </LinearLayout>
+
+
+
 
 </LinearLayout>
-
 
 
 

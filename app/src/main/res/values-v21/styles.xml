@@ -4,5 +4,10 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!--<item name="colorPrimaryDark">#FFB600</item>-->
+        <!--<item name="colorPrimary">#FFB600</item>-->
+
+        <!-- FFB600 상단색상 바꾸기 이걸로 ! -->
     </style>
 </resources>

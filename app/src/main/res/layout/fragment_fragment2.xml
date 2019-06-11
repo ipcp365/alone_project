@@ -5,11 +5,102 @@
     android:layout_height="match_parent"
     tools:context=".Fragment2">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:gravity="center"
+
+
+
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ScrollView1"
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="프래그먼트 2" />
+        android:layout_height="wrap_content">
+
+        <!-- 아래 의미 없이 LinearLayout이 있는 이유는, 스크롤뷰를 사용할때, 기본 설정이 vertical로 되어있어야 하기 때문에
+             임의로 하나 넣어주었다. 없으면 오류남! -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- 메인 이미지 영역 -->
+            <ImageView
+                android:src="@drawable/main4"
+                android:id="@+id/main_zon"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+
+
+
+
+            <!-- 6메뉴 구성 부분 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:background="#FFFFFF"
+                    android:src="@drawable/siasia"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="160dp"/>
+                <ImageButton
+                    android:background="#FFFFFF"
+                    android:src="@drawable/dht"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="160dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:background="#FFFFFF"
+                    android:src="@drawable/qbxl"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="160dp" />
+                <ImageButton
+                    android:background="#FFFFFF"
+                    android:src="@drawable/dog2"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="160dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:background="#FFFFFF"
+                    android:src="@drawable/ehowl"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:background="#FFFFFF"
+                    android:src="@drawable/travel"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
 
 </FrameLayout>
